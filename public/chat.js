@@ -1,5 +1,5 @@
 // make ws connection
-const socket = io.connect('http://localhost:4227')
+const socket = io.connect('https://chit-chat-express.herokuapp.com/')
 
 // query dom
 const message = document.getElementById('message')
