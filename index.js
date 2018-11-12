@@ -1,10 +1,12 @@
 const express = require('express')
 const socket = require('socket.io')
 
+const PORT = process.env.PORT || 4227
+
 // app setup
 const app = express()
-const server = app.listen(4227, ()=>{
-  console.log('listening to requests on port 4227')
+const server = app.listen(PORT, ()=>{
+  console.log(`listening to requests on port ${PORT}`)
 })
 
 // static files
